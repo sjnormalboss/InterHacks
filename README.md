@@ -1,2 +1,2 @@
-# INTERBOT
+# INTERHACK BOT
 Discord Bot--For Hackathon
