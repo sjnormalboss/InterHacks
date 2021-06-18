@@ -162,25 +162,23 @@ p {
   padding-bottom: 300px;
 }
 
-#icon1 {
-  width: 200px;
+#icon1,
+#icon4,
+#icon3 {
+  width: 145px;
   text-align: center;
   padding: 35px;
-  margin-left: 35px;
+  margin-left: 30px;
+  padding-top: 80px;
 }
 
-#icon4 {
-  width: 200px;
-  text-align: center;
-  padding: 35px;
-}
 #icon2,
-#icon3,
 #icon5 {
   text-align: center;
   padding: 35px;
   width: 150px;
 }
+
 .p1 {
   width: 500px;
   padding: 80px;
