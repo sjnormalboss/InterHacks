@@ -64,6 +64,9 @@ nav a:hover {
   padding-top: 100px;
 }
 
+.adm {
+  padding-bottom: 300px;
+}
 h1 {
   font-size: 50px;
   color: white;
@@ -98,20 +101,6 @@ p {
   margin-top: auto;
 }
 
-#Converter {
-  position: relative;
-  left: 800px;
-  color: #55d6aa;
-  padding-top: 100px;
-}
-
-#Language {
-  position: relative;
-  width: 400px;
-  left: 600px;
-  text-align: right;
-}
-
 .feature p {
   color: rgb(119, 115, 115);
   text-align: left;
@@ -119,25 +108,22 @@ p {
   left: 50px;
 }
 
-#Timer {
+#Timer,
+#Admin,
+#timeconverter {
   position: relative;
   padding-top: 300px;
   text-align: center;
   left: 200px;
   color: #55d6aa;
 }
-#Admin {
-  position: relative;
-  left: 300px;
-  padding-top: 300px;
-  color: #55d6aa;
-}
 
-#IDcard {
+#IDcard,
+#Converter {
   position: relative;
   width: 400px;
   padding-top: 300px;
-  left: 800px;
+  left: 850px;
   color: #55d6aa;
 }
 
@@ -147,28 +133,33 @@ p {
   text-align: right;
 }
 
-#Team {
+#icon1 {
+  width: 155px;
+  margin-left: 75px;
   position: relative;
-  width: 400px;
-  padding-top: 300px;
-  left: 800px;
-  color: #55d6aa;
+  text-align: center;
 }
 
-#team {
+#icon5 {
+  width: 200px;
+  margin-left: 60px;
   position: relative;
-  left: -80px;
-  text-align: right;
-  padding-bottom: 300px;
+  text-align: center;
 }
 
-#icon0,
-#icon1,
-#icon3,
-#icon5,
-#icon4,
 #icon2 {
+  width: 200px;
+  margin-left: 40px;
+  position: relative;
+  text-align: center;
+}
+
+#icon3,
+#icon4 {
   width: 150px;
+  margin-left: 80px;
+  position: relative;
+  text-align: center;
 }
 
 footer li {
@@ -239,4 +230,19 @@ footer a {
   position: relative;
   text-align: center;
   color: #55d6aa;
+}
+
+#fir,
+#sec,
+#thi {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 50px;
+  border-style: solid;
+  float: left;
+  background-color: #55d6aa;
+}
+
+#fir {
+  margin-left: 80px;
 }
