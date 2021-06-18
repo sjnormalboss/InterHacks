@@ -123,7 +123,7 @@ p {
   position: relative;
   padding-top: 300px;
   text-align: center;
-  left: 250px;
+  left: 200px;
   color: #55d6aa;
 }
 #Admin {
@@ -162,27 +162,12 @@ p {
   padding-bottom: 300px;
 }
 
+#icon0,
 #icon1,
-#icon4 {
-  width: 200px;
-  text-align: center;
-  padding: 35px;
-  margin-left: 20px;
-  padding-top: 80px;
-}
-
-#icon3 {
-  width: 145px;
-  text-align: center;
-  padding: 35px;
-  margin-left: 20px;
-  padding-top: 80px;
-}
-
-#icon2,
-#icon5 {
-  text-align: center;
-  padding: 35px;
+#icon3,
+#icon5,
+#icon4,
+#icon2 {
   width: 150px;
 }
 
