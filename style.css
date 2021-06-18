@@ -186,17 +186,6 @@ p {
   width: 150px;
 }
 
-.p1 {
-  width: 500px;
-  padding: 80px;
-  text-align: center;
-}
-
-#p1name {
-  position: relative;
-  text-align: center;
-}
-
 footer li {
   display: inline-block;
   padding-top: 20px;
@@ -243,4 +232,26 @@ footer a {
 #allform {
   color: white;
   text-align: center;
+}
+
+#teamfirst {
+  padding: 150px;
+}
+
+.p1 {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-weight: bold;
+}
+
+#p1name,
+#p2name,
+#p3name,
+#p4name {
+  position: relative;
+  text-align: center;
+  color: #55d6aa;
 }
