@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>InterHackBot</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -15,9 +17,9 @@
             <nav>
                 <ul>
                     <li><a href="home.html">Home</a></li>
-                    <li><a class="selected" href="">Command</a></li>
+                    <li><a href="command.html">Command</a></li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="#">Troubleshoot</a></li>
+                    <li><a class="selected" href="">Troubleshoot</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="https://discord.com/channels/@me/854085714869616661/855303023000551445">Login with Discord</a></li>
                 </ul>
@@ -25,6 +27,34 @@
         </div>
     </header>
 
+    <h2 id="s1">Still having trouble after checking out our FAQ Page?</h2>
+    <h2 id="s2">Don't worry, contact us here!</h2>
+
+    <form id="allform">
+        <label for="name" id="label1">Full Name:   </label>
+        <input type="text" id="fform" name="name"><br>
+        <label for="email" id="label2">Email Address:   </label>
+        <input type="email" id="sform" name="email"><br>
+        <label for="message" id="label3">Inquiry:   </label>
+        <input type="text" id="tform" name="message"><br>
+        <label for="screen" id="label4">Select image to upload:  </label>
+        <input type="submit" value="Upload Image" name="screen"> <br>
+        <input type="submit" value="Submit" style="margin-top:20px; margin-bottom:80px"> <br>
+    
+    </form>
+    <footer id="footer">
+        <div id="bottom">
+            <ul id = 'foot'>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="command.html">Command</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a class="selected" href="troubleshoot.html">Troubleshoot</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="https://discord.com/channels/@me/854085714869616661/855303023000551445">Login with Discord</a></li>
+            </ul>
+            <h3 id = "Inter">&copy; 2021 InterHackBot</h3>
+        </div>
+    </footer>
 </body>
 
 </html>

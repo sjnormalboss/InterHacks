@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background: #222;
-  font-family: Times New Roman, Times, serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 300;
 }
 
@@ -163,12 +163,19 @@ p {
 }
 
 #icon1,
-#icon4,
+#icon4 {
+  width: 200px;
+  text-align: center;
+  padding: 35px;
+  margin-left: 20px;
+  padding-top: 80px;
+}
+
 #icon3 {
   width: 145px;
   text-align: center;
   padding: 35px;
-  margin-left: 30px;
+  margin-left: 20px;
   padding-top: 80px;
 }
 
@@ -208,4 +215,32 @@ footer a {
 }
 #Inter {
   text-align: right;
+}
+
+#fform,
+#sform,
+#tform,
+#last {
+  margin-bottom: 20px;
+}
+
+#tform {
+  width: 300px;
+  height: 150px;
+}
+
+#s1 {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#s2 {
+  color: white;
+  text-align: center;
+}
+
+#allform {
+  color: white;
+  text-align: center;
 }
