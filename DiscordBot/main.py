@@ -117,7 +117,7 @@ async def defaultchannel(ctx):
 
 
 @client.event
-async def on_guild_join(guild, ctx):
+async def on_guild_join(ctx, guild):
     text_channel_list = getChannels(ctx)
     await text_channel_list[defaultC].send("InterHacksBot is ready")
 
@@ -557,7 +557,7 @@ async def createID(ctx):
     userinfo.append(csskills.content)
 
     await user.send(
-        f"What is your level in computer science - Beginner, Intermediet, Advanced?"
+        f"What is your level in computer science - Beginner, Intermediate, Advanced?"
     )
 
     cslevel = await client.wait_for(
@@ -590,6 +590,13 @@ async def createID(ctx):
         'message', check=message_check(channel=ctx.author.dm_channel))
     userinfo.append(od.content)
 
+    await user.send(f"Are you still looking for a teammate?")
+
+    tm = await client.wait_for(
+        'message', check=message_check(channel=ctx.author.dm_channel))
+    userinfo.append(od.content)
+
+
     userinfoDictionary = {
         "name": userinfo[0],
         "tz": userinfo[1],
@@ -599,7 +606,8 @@ async def createID(ctx):
         "hobbies": userinfo[5],
         "hackathon": userinfo[6],
         "otherskillset": userinfo[7],
-        "od": userinfo[8]
+        "od": userinfo[8],
+        "tm" : userinfo[9]
     }
 
     jsonfile = open(f"{userID}.json", "w")
@@ -614,16 +622,6 @@ async def loadID(ctx):
     userinfoDictionary = json.load(jsonfile)
 
     print(userinfoDictionary)
-
-    # name = db[authorID]["name"]
-    # tz = db[authorID]["tz"]
-    # othertz = db[authorID]["othertz"]
-    # csskills = db[authorID]["csskills"]
-    # cslevels = db[authorID]["cslevel"]
-    # hobbies = db[authorID]["hobbies"]
-    # hackathon = db[authorID]["hackathon"]
-    # otherskillset = db[authorID]["otherskillset"]
-    # od = db[authorID]["od"]
 
     id = discord.Embed(title=f"information for {ctx.author}",
                        color=discord.Color.red())
@@ -653,6 +651,9 @@ async def loadID(ctx):
                  inline=False)
     id.add_field(name="Other details",
                  value=userinfoDictionary["od"],
+                 inline=False)
+    id.add_field(name="Still looking for a team",
+                 value=userinfoDictionary["tm"],
                  inline=False)
 
     await ctx.send(embed=id)
@@ -704,4 +705,8 @@ async def info(ctx):
 
     await ctx.send(embed=guildid)
 
+with open("token.txt", "r") as token:
+    token = token.readline()
+
+client.run(token)
 
