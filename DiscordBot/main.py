@@ -705,4 +705,3 @@ async def info(ctx):
     await ctx.send(embed=guildid)
 
 
-client.run('NzgwNzg4MTkwMDYzNjI0MjEy.X70Lqg.ntYcOwT50rq7wcKxWGxLA8nRUTc')
