@@ -62,11 +62,10 @@ nav a:hover {
 .descr {
   color: #55d6aa;
   padding-top: 100px;
+  text-align: center;
+  font-size: 48px;
 }
 
-.adm {
-  padding-bottom: 300px;
-}
 h1 {
   font-size: 50px;
   color: white;
@@ -76,6 +75,9 @@ h1 {
 .feature h1 {
   color: #55d6aa;
   padding-top: 100px;
+  text-align: center;
+  font-size: 48px;
+  padding-bottom: 30px;
 }
 
 .feature h2 {
@@ -109,28 +111,75 @@ p {
 }
 
 #Timer,
-#Admin,
-#timeconverter {
+#time {
   position: relative;
-  padding-top: 300px;
   text-align: center;
   left: 200px;
   color: #55d6aa;
+  bottom: 300px;
 }
 
-#IDcard,
+#timeconverter {
+  position: relative;
+  text-align: center;
+  left: 200px;
+  color: #55d6aa;
+  bottom: 400px;
+}
+
+#tc {
+  left: 50px;
+  bottom: 400px;
+}
+
+#Admin,
+#adm {
+  position: relative;
+  text-align: center;
+  color: #55d6aa;
+}
+
+#IDcard {
+  position: relative;
+  width: 400px;
+  left: 850px;
+  bottom: 200px;
+  color: #55d6aa;
+}
+
 #Converter {
   position: relative;
   width: 400px;
-  padding-top: 300px;
-  left: 850px;
+  left: 900px;
   color: #55d6aa;
+  bottom: 500px;
 }
 
 #id {
   position: relative;
   left: -80px;
   text-align: right;
+  bottom: 200px;
+}
+
+#idimageleft {
+  width: 450px;
+  margin-left: 120px;
+  display: inline-block;
+  bottom: 400px;
+}
+
+#idimageleft1 {
+  width: 450px;
+  margin-left: 50px;
+  bottom: 400px;
+}
+
+#idimageright {
+  width: 500px;
+  margin-left: 700px;
+  display: inline-block;
+  margin-top: 200px;
 }
 
 #icon1 {
@@ -223,6 +272,25 @@ footer a {
   font-weight: bold;
 }
 
+#com {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+#lastimg {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  margin-bottom: 300px;
+}
+
 #p1name,
 #p2name,
 #p3name,
@@ -243,6 +311,8 @@ footer a {
   background-color: #55d6aa;
 }
 
-#fir {
-  margin-left: 80px;
+#fir h2,
+#sec h2,
+#thi h2 {
+  text-align: center;
 }
