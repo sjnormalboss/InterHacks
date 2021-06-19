@@ -143,7 +143,7 @@ p {
   position: relative;
   width: 400px;
   left: 850px;
-  bottom: 200px;
+  bottom: 400px;
   color: #55d6aa;
 }
 
@@ -159,7 +159,7 @@ p {
   position: relative;
   left: -80px;
   text-align: right;
-  bottom: 200px;
+  bottom: 400px;
 }
 
 #idimageleft {
