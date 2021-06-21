@@ -16,4 +16,4 @@ Hey, my name is InterHackBot. I guess you could figure out from my name that I'm
 Hackathons have been getting more popular and as discord continues to serve as a major communication platform, we all need some discord bots to help with the overall structure,                                                             flow, and communication.
 
 
-           Have a great day and be sure to look more into me at:https://devpost.com/software/interhacks-discord-bot
+           Have a great day and to run the website, go to the InterHacksWebsite branch while the discord bot is included in main.
