@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width">
     <title>InterHackBot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
 
-</head>
-
-<body>
-    <header>
+<body class="bg-dark text-white">
+    <nav>
         <div class="container">
-            <img src="logo.svg" alt="logo" id="logo">
-            <nav>
+            <div>
+                <img src="logo.svg" alt="logo" id="logo">
+            </div>
+            <a href="#" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="command.html">Command</a></li>
@@ -23,36 +31,46 @@
                     <li><a href="team.html">Team</a></li>
                     <li><a href="https://discord.com/oauth2/authorize?client_id=780788190063624212&permissions=8&scope=bot">Add to Discord</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <h2 id="s1">Still having trouble after checking out our FAQ Page?</h2>
-    <h2 id="s2">Don't worry, contact us here!</h2>
-
-    <form id="allform">
-        <label for="name" id="label1" style="margin-top: 100px">Full Name:   </label>
-        <input type="text" id="fform" name="name"><br>
-        <label for="email" id="label2">Email Address:   </label>
-        <input type="email" id="sform" name="email"><br>
-        <label for="message" id="label3">Inquiry:   </label>
-        <input type="text" id="tform" name="message"><br>
-        <input type="submit" value="Submit" style="margin-top:20px; margin-bottom:80px"> <br>
-    
-    </form>
-    <footer id="footer">
-        <div id="bottom">
-            <ul id = 'foot'>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="command.html">Command</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a class="selected" href="troubleshoot.html">Troubleshoot</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="https://discord.com/channels/@me/854085714869616661/855303023000551445">Login with Discord</a></li>
-            </ul>
-            <h3 id = "Inter">&copy; 2021 InterHackBot</h3>
+    <h1 class="text-center my-5 font-weight-bold">Troubleshoot</h1>
+    <h2 class="text-center my-5 mx-5">Feel free to shoot us a message here if you encounter any troubles or glitches! <br> We will response really soon!</h2>
+    <div class="mx-4 my-4 bg-dark.bg-gradient">
+      <form name="troubleshoot-form" id="troubleshoot-form" method="POST">
+        <div class="row t-2">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="name">Full Name: </label>
+            <input type="text" name="name" id="name" class="form-control" required />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" id="email" class="form-control" required />
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <label for="subject">Subject: </label>
+            <input type="text" name="subject" id="subject" class="form-control" required />
+          </div>
         </div>
-    </footer>
-</body>
-
+        <div class="row my-2">
+          <div>
+            <label for="message">Inquries: </label>
+            <textarea name="message" id="message" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="row my-2">
+            <div class="text-center col-12">
+                <label for="image">Attach a Screenshot: </label>
+                <input type="file" name="image" id="image"/>
+            </div>
+        </div>
+        <div class="row my-4">
+          <div class="text-center col-12">
+            <input type="submit" name="submit" id="submit" class="btn btn-light"/>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
