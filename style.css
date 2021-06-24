@@ -55,7 +55,7 @@ header::after {
   color: rgb(1, 17, 1);
 }
 
-.hamburger {
+/* .hamburger {
   position: absolute;
   top: 2.8rem;
   right: 2rem;
@@ -71,7 +71,7 @@ header::after {
   width: 100%;
   background-color: rgb(226, 222, 222);
   border-radius: 10px;
-}
+} */
 
 .selected {
   font-weight: bold;
@@ -345,9 +345,9 @@ footer a {
 }
 
 @media (max-width: 1000px) {
-  .hamburger {
+/*   .hamburger {
     display: flex;
-  }
+  } */
 
   .nav {
     display: none;
