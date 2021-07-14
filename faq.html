@@ -4,74 +4,74 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>InterHackBot</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">    
 
+    <style>
+        body {
+            font-family: "Dosis";
+          }
+    </style>
 </head>
 
 <body class="bg-dark text-white">
-    <nav>
-        <div class="container">
-            <div>
-                <img src="logo.svg" alt="logo" id="logo">
-            </div>
-             <a href="#" class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a> 
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="command.html">Command</a></li>
-                    <li><a class="selected" href="">FAQ</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="https://discord.com/oauth2/authorize?client_id=780788190063624212&permissions=8&scope=bot">Add to Discord</a></li>
-                </ul>
-            </div>
+
+    <header id="header">
+        <div class="text-justify" style="background-color:#55d6aa">
+            <nav class="navbar navbar-expand-lg navbar-light" style="text-align: right;">
+                <img src="/image/logo.svg" alt="logo" id="logo" class="navbar-brand px-4 width-100">
+                <button class="navbar-toggler me-4 border border-info" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon color-dark"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span class="navbar-text text-end text-dark" style="font-size: 24px; margin-left:7rem;">Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="command.html"><span class="navbar-text text-end text-dark" style="font-size: 24px;">Commands</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href=""><span class="navbar-text text-end text-dark" style="font-size: 24px;">FAQ</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="team.html"><span class="navbar-text text-end text-dark" style="font-size: 24px;">Team</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=780788190063624212&permissions=8&scope=bot"><span class="navbar-text text-end text-dark" style="font-size: 24px;">Login with Discord</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span class="navbar-text text-end text-dark" style="font-size: 24px;">Contact Us</span></a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <h1 style="padding-top: 50px">FAQ Page</h1>
-
-    <section id="fir">
-        <h2> Why use this Bot?
-    </h2>
-        <p>Our discord bot combines the many features that are highly sought during a hackathon. Computer has begun dominating our world, and the rate of hackathons will only increase. There are many hackthons that leave their organizers and participants in tears due to several issues. We provide free service to make your competition and life much smoother and organized. Our bot does have features that are already in some Discord bots, but what makes our bot unique is that we combine the features together to ensure smooth and happy coding experience! </p>
-</section>
-    </section>
-
-    <section id="sec">
-        <h2>How was InterHackBot made?</h2>
-        <p>InterHackBot was made through the combined effort of our team to go day and night to accomplish all of our ambitious goals. We made it though python and json as we completely fell in love with the end-result.</p>
-
-    </section>
-
-    <section id="thi">
-        <h2>What was the inspiration for InterHackBot?</h2>
-        <p>Our team observes that online hackathon can be complicated sometimes due to various reasons, including organization of information, time zone differences, etc. As a result, we created the InterHackBot <br> with multiple features aiming to solve all the problems we see. </p>
-    </section>
-
- 
+    <div class="container text-center py-5" style="color:white">
+        <h1 style="font-size:50px; font-weight: bold;">FAQ</h1>
+    </div>
     
-    <h3 style="color:white; text-align: center">Please go to the <a href="troubleshoot.html" style="color: #55d6aa">Troubleshoot page</a> to report a glitch or problem if you can't revolve it.</h3>
+    <div class="bg-light">
+        <div class="text-dark">
+            <h2> Why use this Bot?</h2>
+            <p>Our discord bot combines the many features that are highly sought during a hackathon. 
+                Computer has begun dominating our world, and the rate of hackathons will only increase. 
+                There are many hackthons that leave their organizers and participants in tears due to several issues. 
+                We provide free service to make your competition and life much smoother and organized. 
+                Our bot does have features that are already in some Discord bots, but what makes our bot unique is 
+                that we combine the features together to ensure smooth and happy coding experience! </p>
+            </div>
 
+        <div class="text-dark">
+            <h2>How was InterHackBot made?</h2>
+            <p>InterHackBot was made through the combined effort of our team to go day and night to accomplish all of our ambitious goals. We made it though python and json as we completely fell in love with the end-result.</p>
 
-   
-
-
-    <footer id="footer">
-        <div id="bottom">
-            <ul id = 'foot'>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="command.html">Command</a></li>
-                <li><a class="selected" href="">FAQ</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="https://discord.com/channels/@me/854085714869616661/855303023000551445">Login with Discord</a></li>
-            </ul>
-            <h3 id = "Inter">&copy; 2021 InterHackBot</h3>
         </div>
+
+        <div class="text-dark">
+            <h2>What was the inspiration for InterHackBot?</h2>
+            <p>Our team observes that online hackathon can be complicated sometimes due to various reasons, including organization of information, time zone differences, etc. As a result, we created the InterHackBot <br> with multiple features aiming to solve all the problems we see. </p>
+        </div>
+
+    </div>
+    
+    <footer class="text-center my-5">
+        <a href="#header"><h2><span style="font-size:25px;">Back to Top ↑</span></h2></a>
+        <h3><span style="font-size:28px;">&copy; 2021 InterHackBot</span></h3>
     </footer>
    
 </body>

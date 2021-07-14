@@ -4,97 +4,132 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>InterHackBot</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">    
+
+<style>
+    body {
+        font-family: "Dosis";
+      }
+</style>
 
 </head>
 
 <body>
-    <nav>
-        <div class="container">
-            <div>
-                <img src="/static/logo.svg" alt="logo" id="logo">
+    <header id="header">
+        <div class="text-justify" style="background-color:#55d6aa">
+            <nav class="navbar navbar-expand-lg navbar-light" style="text-align: right;">
+                <img src="/image/logo.svg" alt="logo" id="logo" class="navbar-brand px-4 width-100">
+                <button class="navbar-toggler me-4 border border-info" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon color-dark"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href=""><span class="navbar-text text-end text-dark" style="font-size: 24px; margin-left:7rem;">Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="command.html"><span class="navbar-text text-end text-dark" style="font-size: 24px;">Commands</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html"><span class="navbar-text text-end text-dark" style="font-size: 24px;">FAQ</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="team.html"><span class="navbar-text text-end text-dark" style="font-size: 24px;">Team</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="navbar-text text-end text-dark" style="font-size: 24px;">Login with Discord</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span class="navbar-text text-end text-dark" style="font-size: 24px;">Contact Us</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-dark">
+        <div class="container text-center pt-4">
+            <div class="font-weight-bold mt-3" style="color: #55d6aa;"> <h1>What is InterHackBot?</h1> </div>
+            <div class="mb-3 py-4 text-white" style="font-size: 26px;"> <p>InterHackBot is a Discord bot specifically designed for online hackathons. <br>
+                Use our many features to effciently work and enjoy your time in the hackathon!</p></div>
+        </div>
+        <div class="bg-gradient-dark text-center">
+            <div class="font-weight-black mt-3" style="color: #55d6aa;"> <h1>Features</h1> </div>
+            <div class="container py-4 pb-5"><img src="/image/icons.png" alt="First" class="img-fluid px-3 inline-block"></div>
+        </div>
+    </div>
+
+<div style="background-color: #55d6aa;">
+    <div class="container">
+        <div class="row py-5 my-5">
+            <div class="col-lg-6 col-md-12" style="padding-top: 10rem;">
+                <h2 style="color: white; font-weight:bolder;">Time Zone Converter</h2>
+                <p class="text-left pt-2" style="font-size: 22px;">Are your teammates from all over the world? Do you get confused when
+                    scheduling a meeting with them? No worries! With this feature set up, 
+                    you can easily understand different time zone by triggering the command.</p>
             </div>
-            <a href="#" class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="nav pl-3">
-                <ul>
-                    <li><a class="selected" href="">Home</a></li>
-                    <li><a href="command.html">Command</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="https://discord.com/oauth2/authorize?client_id=780788190063624212&permissions=8&scope=bot">Add to Discord</a></li>
-                </ul>
+            <div class="col-lg-6 text-right">
+                <img src="/image/tzimage.svg" alt="TimeZoneConverterDemo" style="width: 450px; margin:0;">
             </div>
         </div>
-    </nav>
 
-    <div class="p-auto text-center">
-        <h1 style="color:#55d6aa">What is InterHackBot?</h1>
-        <p> InterHackBot is a Discord bot specifically designed for online hackathons. <br> Use our many features to effciently work and enjoy your time in the hackathon!</p>
-    </div>
+        <div class="row py-5 my-5">
+            <div class="col-lg-6 col-md-12">
+                <img src="/image/tra.svg" alt="LanguageConverterDemo" style="width: 450px">
+            </div>
+            <div class="col-lg-6" style="padding-top: 13rem;">
+                <h2 class="text-right" style="color: white; font-weight:bolder;">Language Converter</h2>
+                <p class="text-right pt-2" style="font-size: 22px; ">Are your teammates extremely bright in coding, but don't speak the same language? The language feature helps you convert over 75+ languages including French, Spanish, and more!
+                    You can get ahead of the competition with the help of your smart teammate with the help of InterHackBot.
+                </p>
+            </div>
+        </div>
 
-<section class="feature">
+        <div class="row py-5 my-5">
+            <div class="col-lg-6 col-md-12" style="padding-top: 5rem;">
+                <h2 style="color: white; font-weight:bolder;">Hackathon Timer & Reminder</h2>
+                <p class="text-left pt-2" style="font-size: 22px;">Want to work more efficiently with a Pomodoro timer? InterHackBot
+                    can totally help you with that! This feature also includes a shortcut
+                    to send your teammate a message after a certain time. For example,
+                    remind them to start working after 10 minutes!</p>
+            </div>
+            <div class="col-lg-6 text-right">
+                <img src="/image/rem.svg" alt="Timer&Reminder" style="width: 450px; margin:0;">
+            </div>
+        </div>
 
-    <h1>Features</h1>
+        <div class="row py-5 my-5">
+            <div class="col-lg-6 col-md-12">
+                <img src="/image/loadID.svg" alt="ID" style="width: 450px">
+            </div>
+            <div class="col-lg-6" style="padding-top: 10rem;">
+                <h2 class="text-right" style="color: white; font-weight:bolder;">Personalized ID Card</h2>
+                <p class="text-right pt-2" style="font-size: 22px;">
+                    For those who are still in need of a team and those who would
+                    like to proudly display their stats this feature is for you! You can
+                    add various stats including your experience level all the way to
+                    your hobbies. Others who see that you are still looking for
+                    teammates can reach out to you, and you can get
+                    started right away!
+                </p>
+            </div>
+        </div>
 
-    <div> 
-        <img src="timezone.svg" alt="First" id="icon1">
-        <img src="first.svg" alt="First" id="icon2" style="width:200px">
-        <img src="second.svg" alt="Second" id="icon3">
-        <img src="third.svg" alt="Third" id="icon4">
-        <img src="fourth.svg" alt="Forth" id="icon5">
-    </div>
-    
-    <img src="tzimage.svg" alt="idcard" id="idimageright">   
-    <h2 id = "timeconverter">Time Zone Converter</h2>
-    <p id="tc">Are your teammates from all over the world? Do you get confused<br> when
-         scheduling a meeting with them? No worries! With this <br> feature set up, 
-         you can easily understand different time zone <br>by triggering the command. </p> 
-    
-    <img src="tra.svg" alt="idcard" id="idimageleft" style="width:500px">   
-    <h2 id="Converter">Language Converter</h2>
-        <p style="text-align:right; padding-right: 120px; bottom: 500px";>Are your teammates extremely bright in coding, but <br>don't speak the same language? The language feature helps <br> you convert over 75+ languages including French, Spanish, <br> and more!
-            You can get ahead of the competition with the <br> help of your smart teammate with the help of InterHackBot.
-        </p>
+        <div class="row py-5 my-5 text-center">
+            <div class="col-12">
+                <h2 style="color: white; font-weight:bolder;">Hackathon Infomation</h2>
+                <p class="pt-2" style="font-size: 22px;">With this feature admins will be prompted to enter crucial hackathon information
+                    in which participants can easily access and understand upon triggering
+                    the command.</p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="/image/set.svg" alt="Set Info" style="width: 450px; margin-top:3rem;">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="/image/get.svg" alt="Get Info" style="width: 450px; margin-top:2rem;">
+            </div>
+        </div>
         
-    <img src="rem.svg" alt="idcard" id="idimageright">   
-    <h2 id="Timer">Hackathon Timer/ Reminder</h2>
-        <p id = "time" style="color: rgb(119, 115, 115); text-align:left;left:50px">Want to work more efficiently with a Pomodoro timer? 
-           InterHackBot <br> can totally help you with that! This feature also includes a shortcut <br> 
-            to send your teammate a message after a certain time. For example, <br> remind them to start working after 10 minutes! </p>
+    </div>
+</div>
 
-        <img src="loadID.svg" alt="idcard" id="idimageleft1">   
-        <h2 id="IDcard">Personalized ID Card</h2>
-        <p id = 'id'>For those who are still in need of a team and those who would <br> like to proudly display their stats this feature is for you! You can <br> add various stats including
-        your experience level all the way to <br> your hobbies. Others who see that you are still looking for <br> 
-        teammates can reach out to you, and you can get <br> started right away!</p>
-    </section>
-    
-    <h2 id="Admin" style="padding-top: 300px">Hackathon Infomation</h2>
-        <p id="adm" style="color: rgb(119, 115, 115)">With this feature admins will be prompted to enter crucial hackathon information <br>in which participants 
-            can easily access and understand upon triggering <br>the command.</p>
-    <img src="set.svg" alt="Admin" id="last">   
-    <img src="info.svg" alt="Admin" id="lastimg">   
-
-
-</section>
-
-    <footer id="footer">
-        <div id="bottom">
-            <ul id = 'foot'>
-                <li><a class="selected" href="">Home</a></li>
-                <li><a href="command.html">Command</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="https://discord.com/channels/@me/854085714869616661/855303023000551445">Login with Discord</a></li>
-            </ul>
-            <h3 id = "Inter">&copy; 2021 InterHackBot</h3>
-        </div>
+    <footer class="text-center mb-5">
+        <a href="#header"><h2><span style="font-size:25px;">Back to Top ↑</span></h2></a>
+        <h3><span style="font-size:28px;">&copy; 2021 InterHackBot</span></h3>
     </footer>
 </body>
 
